@@ -50,10 +50,14 @@ public class EDAMTest002 {
         new Find001Test(auth.AuthToken, auth.NoteStore).Run();
         WriteSeparator();
         new Find002Test(auth.AuthToken, auth.NoteStore).Run();
+        WriteSeparator();
+        new Find003Test(auth.AuthToken, auth.NoteStore).Run();
 
         // ÉmÅ[ÉgëÄçÏ
         WriteSeparator();
         new Note001Test(auth.AuthToken, auth.NoteStore).Run();
+        WriteSeparator();
+        new Note002Test(auth.AuthToken, auth.NoteStore).Run();
 
         // OAuthîFèÿ
         WriteSeparator();

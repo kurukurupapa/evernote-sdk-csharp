@@ -61,6 +61,8 @@
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
     <Compile Include="Auth001Test.cs" />
+    <Compile Include="Find003Test.cs" />
+    <Compile Include="Note002Test.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\src\Evernote\EDAM.csproj">
