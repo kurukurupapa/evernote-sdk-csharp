@@ -4,10 +4,10 @@ using System;
 
 namespace SampleApp002
 {
-    //
-    // 次のページを参考に、「基本的な検索」をしてみる。
-    // http://dev.evernote.com/intl/jp/doc/articles/searching_notes.php
-    //
+    /// <summary>
+    /// 次のページを参考に、「基本的な検索」をしてみる。
+    /// http://dev.evernote.com/intl/jp/doc/articles/searching_notes.php
+    /// </summary>
     class Find001Test
     {
         private String mAuthToken;

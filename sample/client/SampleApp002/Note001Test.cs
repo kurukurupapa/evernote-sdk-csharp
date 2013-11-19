@@ -6,9 +6,9 @@ using System.IO;
 
 namespace SampleApp002
 {
-    //
-    // 特定ノートの内容を表示する
-    //
+    /// <summary>
+    /// 特定ノートの内容を表示するテスト
+    /// </summary>
     class Note001Test
     {
         private String mAuthToken;

@@ -6,10 +6,10 @@ using System.Text;
 
 namespace SampleApp002
 {
-    //
-    // 次のページを参考に、「高度な検索」をしてみる。
-    // http://dev.evernote.com/intl/jp/doc/articles/searching_notes.php
-    //
+    /// <summary>
+    /// 次のページを参考に、「高度な検索」をしてみる。
+    /// http://dev.evernote.com/intl/jp/doc/articles/searching_notes.php
+    /// </summary>
     class Find002Test
     {
         private String mAuthToken;
