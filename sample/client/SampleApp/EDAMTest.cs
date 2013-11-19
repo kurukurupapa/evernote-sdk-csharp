@@ -32,6 +32,10 @@ using SampleApp.Properties;
 public class EDAMTest {
     public static void Main(string[] args) {
 
+        // --------------------------------------------------
+        // UserStoreオブジェクト作成
+        // --------------------------------------------------
+
         // Real applications authenticate with Evernote using OAuth, but for the
         // purpose of exploring the API, you can get a developer token that allows
         // you to access your own Evernote account. To get a developer token, visit 
@@ -54,7 +58,11 @@ public class EDAMTest {
         TTransport userStoreTransport = new THttpClient(userStoreUrl);
         TProtocol userStoreProtocol = new TBinaryProtocol(userStoreTransport);
         UserStore.Client userStore = new UserStore.Client(userStoreProtocol);
-        
+
+        // --------------------------------------------------
+        // バージョンチェック
+        // --------------------------------------------------
+
         bool versionOK =
             userStore.checkVersion("Evernote EDAMTest (C#)",
         	   Evernote.EDAM.UserStore.Constants.EDAM_VERSION_MAJOR,
@@ -63,6 +71,10 @@ public class EDAMTest {
         if (!versionOK) {
             return;
         }
+
+        // --------------------------------------------------
+        // NoteStoreオブジェクト作成
+        // --------------------------------------------------
 
         // Get the URL used to interact with the contents of the user's account
         // When your application authenticates using OAuth, the NoteStore URL will
@@ -74,13 +86,21 @@ public class EDAMTest {
         TProtocol noteStoreProtocol = new TBinaryProtocol(noteStoreTransport);
         NoteStore.Client noteStore = new NoteStore.Client(noteStoreProtocol);
 
+        // --------------------------------------------------
+        // ノートブック情報取得
+        // --------------------------------------------------
+
         // List all of the notebooks in the user's account        
         List<Notebook> notebooks = noteStore.listNotebooks(authToken);
         Console.WriteLine("Found " + notebooks.Count + " notebooks:");
         foreach (Notebook notebook in notebooks) {
             Console.WriteLine("  * " + notebook.Name);
         }
-        
+
+        // --------------------------------------------------
+        // ノート作成（添付ファイルあり）
+        // --------------------------------------------------
+
         Console.WriteLine();
         Console.WriteLine("Creating a note in the default notebook");
         Console.WriteLine();
