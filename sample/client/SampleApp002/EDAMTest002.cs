@@ -13,23 +13,8 @@
     mono SampleApp/bin/Debug/EDAMTest.exe
 */
 
-using System;
-using System.Drawing;
-using System.IO;
-using System.Collections;
-using System.Collections.Generic;
-using System.Text;
-using System.Security.Cryptography;
-using Thrift;
-using Thrift.Protocol;
-using Thrift.Transport;
-using Evernote.EDAM.Type;
-using Evernote.EDAM.UserStore;
-using Evernote.EDAM.NoteStore;
-using Evernote.EDAM.Error;
-using SampleApp.Properties;
-using SampleApp;
 using SampleApp002;
+using System;
 
 public class EDAMTest002 {
     public static void Main(string[] args) {

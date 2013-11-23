@@ -2,8 +2,6 @@
 using Evernote.EDAM.NoteStore;
 using Evernote.EDAM.Type;
 using System;
-using System.Collections.Generic;
-using System.IO;
 
 namespace SampleApp002
 {

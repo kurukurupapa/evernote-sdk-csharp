@@ -1,0 +1,9 @@
+﻿<NUnitProject>
+  <Settings activeconfig="Debug" />
+  <Config name="Debug" binpathtype="Auto">
+    <assembly path="EverGetTest\bin\Debug\EverGetTest.dll" />
+  </Config>
+  <Config name="Release" binpathtype="Auto">
+    <assembly path="EverGetTest\bin\Release\EverGetTest.dll" />
+  </Config>
+</NUnitProject>

@@ -1,10 +1,7 @@
 ﻿using Evernote.EDAM.Error;
 using Evernote.EDAM.NoteStore;
-using Evernote.EDAM.Type;
 using Evernote.EDAM.UserStore;
 using System;
-using System.Collections.Generic;
-using System.IO;
 using Thrift.Protocol;
 using Thrift.Transport;
 
