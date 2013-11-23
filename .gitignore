@@ -1,3 +1,5 @@
 bin
 obj
 .DS_Store
+/sample/client/*.suo
+/sample/client/TestResult.xml
