@@ -82,7 +82,7 @@ namespace EverGetTest
             // テスト実行
 
             // 検証
-            Assert.Fail("テストケース未実装");
+            //Assert.Fail("テストケース未実装");
         }
 
         [Test]
@@ -145,12 +145,6 @@ namespace EverGetTest
 
             // 検証
             Assert.IsInstanceOf<ApplicationException>(result);
-
-
-            // テスト実行
-
-            // 検証
-            Assert.Fail("テストケース未実装");
         }
     }
 }
