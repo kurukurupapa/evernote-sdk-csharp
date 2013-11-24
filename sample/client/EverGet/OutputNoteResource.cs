@@ -20,21 +20,19 @@ namespace EverGet
 
         public void Save()
         {
-            string path = mPath + GetExtenstion();
-
             byte[] data = mRes.Data.Body;
-            using (FileStream fs = new FileStream(path, FileMode.Create))
+            using (FileStream fs = new FileStream(mPath, FileMode.Create))
             {
                 fs.Write(data, 0, data.Length);
             }
         }
 
-        private string GetExtenstion()
+        public static string GetExtenstion(Resource res)
         {
-            Console.WriteLine("Mime:" + mRes.Mime);
+            Console.WriteLine("Mime:" + res.Mime);
 
             string ext;
-            switch (mRes.Mime)
+            switch (res.Mime)
             {
                 case "image/gif":
                     ext = ".gif";

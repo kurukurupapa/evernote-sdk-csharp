@@ -23,13 +23,13 @@ namespace EverGetTest
             // 準備
             Note note = new Note();
             note.Content = "content";
-            string fileName = "TestSaveNote_Normal_0001.txt";
+            string baseName = "TestSaveNote_Normal_0001";
 
             // テスト実行
-            mTarget.SaveNote(note, fileName);
+            mTarget.SaveNote(note, baseName, 1);
 
             // 検証
-            Assert.True(File.Exists(fileName));
+            Assert.True(File.Exists(baseName + "_00001.txt"));
         }
 
         [Test]
@@ -43,13 +43,13 @@ namespace EverGetTest
             note.Content = "content";
             note.Resources = new List<Resource>();
             note.Resources.Add(resource);
-            string fileName = "TestSaveNote_Normal_0002.txt";
+            string baseName = "TestSaveNote_Normal_0002";
 
             // テスト実行
-            mTarget.SaveNote(note, fileName);
+            mTarget.SaveNote(note, baseName, 1);
 
             // 検証
-            Assert.True(File.Exists(fileName));
+            Assert.True(File.Exists(baseName + "_00001.txt"));
         }
     }
 }
